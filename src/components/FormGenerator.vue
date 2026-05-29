@@ -147,7 +147,12 @@ function onSubmit() {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  max-width: 360px;
+  width: 100%;
+}
+.fg input,
+.fg select {
+  width: 100%;
+  box-sizing: border-box;
 }
 .fg__row {
   display: flex;

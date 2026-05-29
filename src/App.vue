@@ -70,12 +70,18 @@ function onSubmit(data: FormData) {
 .page {
   padding: 32px;
   font-family: system-ui, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .grid {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 360px 1fr;
   gap: 48px;
   align-items: start;
+}
+@media (max-width: 700px) {
+  .page { padding: 16px; }
+  .grid { grid-template-columns: 1fr; gap: 24px; }
 }
 pre {
   background: #f4f4f4;
