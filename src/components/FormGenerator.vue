@@ -149,11 +149,12 @@ function onSubmit() {
   gap: 14px;
   width: 100%;
 }
-.fg input,
+.fg input:not([type="checkbox"]),
 .fg select {
   width: 100%;
   box-sizing: border-box;
 }
+.fg__check input { width: auto; flex: 0 0 auto; }
 .fg__row {
   display: flex;
   flex-direction: column;
